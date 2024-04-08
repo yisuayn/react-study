@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+
+// import { useEffect } from 'react';
+// import axios from 'axios'
+import IndexRouter from './router/indexRouter'
 
 function App() {
+  // useEffect(() => {
+  //   axios.get("/api/mmdb/movie/v3/list/hot.json?ct=%E9%87%8D%E5%BA%86&ci=45&channelId=4").then(res => {
+  //     console.log(res.data)
+  //   })
+  // })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <IndexRouter>
+    </IndexRouter>
   );
 }
 
